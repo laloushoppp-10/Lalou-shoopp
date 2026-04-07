@@ -4,7 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بوابة الأخبار - La Presse Style</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* إعدادات عامة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo h1 {
+            font-size: 28px;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -1px;
+            font-family: serif; /* يعطي طابع الصحف الرسمية */
+        }
+
+        .logo span {
+            color: #b38a38; /* لون الريشة الذهبية */
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            border: 1px solid #000;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+
+        /* سطر الإعلانات */
+        .ad-container {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ad-placeholder {
+            width: 100%;
+            min-height: 50px;
+            background: #ebebeb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #bbb;
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* القائمة الاحترافية (بدون نقاط) */
+        .main-menu ul {
+            list-style: none; /* إزالة النقاط السوداء */
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu li {
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #777;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .main-menu li:hover {
+            background-color: #fcfcfc;
+            color: #000;
+            padding-right: 30px; /* حركة بسيطة عند التمرير */
+        }
+
+        /* محتوى الخبر */
+        main {
+            padding: 20px;
+        }
+
+        .magazine-label {
+            color: #888;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .main-headline h2 {
+            font-size: 30px;
+            line-height: 1.4;
+            margin: 0;
+            font-weight: 800;
+        }
+
+        /* جعل الروابط تعمل بشكل جيد داخل القائمة */
+        .main-menu a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +125,7 @@
     <div class="ad-container">
         <p style="font-size: 10px; color: #999; margin-bottom: 5px;">إعلان</p>
         <div class="ad-placeholder">
-            رابط إعلان أدستيرا الخاص بك يوضع هنا
+            إعلان Adsterra يوضع في هذا المكان
         </div>
     </div>
 
